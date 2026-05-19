@@ -39,7 +39,7 @@ def analyze_journal_entry(content, mood_score):
 
     try:
         response = client.models.generate_content(
-            model="gemini-3.1-flash-lite-preview",
+            model="gemini-3.1-flash-lite",
             contents=prompt
         )
         text = response.text.strip()
